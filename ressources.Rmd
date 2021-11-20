@@ -1,0 +1,37 @@
+---
+title: "Ressources R"
+description: |
+  Vous trouverez dans cette sections des ressources R intéressantes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Livres
+
+Liens vers des livres R en lignes
+
+-   [R for Data Science](https://r4ds.had.co.nz "r4ds") - La référence du moment (en anglais)
+
+-   [Introduction à R et au tidyverse](https://juba.github.io/tidyverse/ "tidyverse") - Très bon contenu (en français)
+
+-   [Data Science in a Box](https://datasciencebox.org) "dsbox") - contenu riche (en anglais)
+
+-   [The Big Book of R](https://www.bigbookofr.com "Big book") - une collection de \~150 livres sur R (en anglais)
+
+## Blog
+
+Liens vers des blog à connaître absolument !
+
+-   [DellaData](https://delladata.fr "Blog") - le blog de Claire Della Vedova (en français)
+
+-   [The Mockup Blog](https://themockup.blog "Mockup Blog") - le blog de Tom Mock (en anglais)
+
+-   [Julia Silge Blog](https://juliasilge.com/blog/ "Julia Blog") (en anglais)
+
+## Videos
+
+Des tutoriels vidéos à suivre absolument !
+
+-   [Yury Zablotski](https://www.youtube.com/channel/UCcGXGFClRdnrwXsPHi7P4ZA/videos "Yury") - chaîne youtube de ressources R (en anglais)

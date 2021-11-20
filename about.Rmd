@@ -1,0 +1,37 @@
+---
+title: "Raison d'être"
+description: |
+  Ce blog a pour objet de partager des approches pratiques sur la science de données avec R. 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Qui vous êtes?
+
+Vous êtes à la recherche de contenus pratiques en sur la science de données avec R ? notamment :
+
+-   L'analyse exploratoire de données;
+
+-   L'analyse prédictive ( modélisation statistiques )
+
+-   La visualisation de données ( cartes, graphiques, ..);
+
+-   La manipulation de données environnementales ( netcdf,grib, geotiff, ...)
+
+Si oui vous êtes à la bonne adresse. Bienvenue pour une partage d'expérience.
+
+## Qui suis - je ?
+
+Je me nomme Ousmane Ouedraogo, je suis passionné de sciences, de maths, d'informatique et surtout de R. Mon background en trois points:
+
+-   Mathématiques & Informatique
+
+-   Météorologie & Climat
+
+-   Formateur
+
+## Me contacter ?
+
+Vous pouvez me contacter via [e-mail](mailto:ousmanealyyabyoure@gmail.com)

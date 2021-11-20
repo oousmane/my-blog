@@ -1,0 +1,18 @@
+name: "my-blog"
+title: "Data Science avec R"
+description: |
+  My Blog
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Accueil"
+      href: index.html
+    - text: "Ressources"
+      href: ressources.html
+    - text: "A propos"
+      href: about.html
+collections:
+  posts:
+    share: [facebook, twitter]
+base_url: https://datascience-avec-r.netlify.app
+output: distill::distill_article

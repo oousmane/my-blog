@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Data Science avec R</title>
+    <link>https://datascience-avec-r.netlify.app</link>
+    <atom:link href="https://datascience-avec-r.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
+    <description>My Blog
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Importation de données dans R </title>
+      <dc:creator>Ousmane Ouedraogo</dc:creator>
+      <link>https://datascience-avec-r.netlify.app/posts/2021-11-20-data-import-with-r</link>
+      <description>facilité d'import de données.</description>
+      <guid>https://datascience-avec-r.netlify.app/posts/2021-11-20-data-import-with-r</guid>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bienvenue</title>
+      <dc:creator>Ousmane Ouedraogo</dc:creator>
+      <link>https://datascience-avec-r.netlify.app/posts/2021-11-18-bienvenue</link>
+      <description>Bienvenue sur ce blog consacré à la data science avec R.</description>
+      <guid>https://datascience-avec-r.netlify.app/posts/2021-11-18-bienvenue</guid>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

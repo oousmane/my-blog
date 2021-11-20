@@ -1,0 +1,24 @@
+---
+title: "Bienvenue"
+description: |
+  Bienvenue sur ce blog consacré à la data science avec R.
+author:
+  - name: Ousmane Ouedraogo
+date: 2021-11-18
+output:
+  distill::distill_article:
+    toc: true
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Enfin le blog !
+
+Data science avec R est un projet de longue date, devenu aujourd'hui une réalité. Data science avec R se donne pour mission de partager avec vous de belles et pratiques expériences d'utilisation de R pour des calculs statistiques, modélisation, et l'implémentation d'algorithmes de machine learning variés pour la prise de décision.
+
+## Public cible
+
+Data science avec R s'adresse a un public très varié, des amoureu(ses)x de R aux chercheurs en passant par des étudiant(e)s désireux d'apprendre de nouvelles choses avec R.
