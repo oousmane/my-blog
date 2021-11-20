@@ -6,14 +6,14 @@
       "description": "Ce blog a pour objet de partager des approches pratiques sur la science de données avec R. ",
       "author": [],
       "contents": "\nQui vous êtes?\nVous êtes à la recherche de contenus pratiques en sur la science de données avec R ? notamment :\nL’analyse exploratoire de données;\nL’analyse prédictive ( modélisation statistiques )\nLa visualisation de données ( cartes, graphiques, ..);\nLa manipulation de données environnementales ( netcdf,grib, geotiff, …)\nSi oui vous êtes à la bonne adresse. Bienvenue pour une partage d’expérience.\nQui suis - je ?\nJe me nomme Ousmane Ouedraogo, je suis passionné de sciences, de maths, d’informatique et surtout de R. Mon background en trois points:\nMathématiques & Informatique\nMétéorologie & Climat\nFormateur\nMe contacter ?\nVous pouvez me contacter via e-mail\n\n\n\n",
-      "last_modified": "2021-11-21T00:17:52+01:00"
+      "last_modified": "2021-11-21T00:40:08+01:00"
     },
     {
       "path": "index.html",
       "title": "Articles",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-11-21T00:17:53+01:00"
+      "last_modified": "2021-11-21T00:40:09+01:00"
     },
     {
       "path": "ressources.html",
@@ -21,7 +21,7 @@
       "description": "Vous trouverez dans cette sections des ressources R intéressantes",
       "author": [],
       "contents": "\nLivres\nLiens vers des livres R en lignes\nR for Data Science - La référence du moment (en anglais)\nIntroduction à R et au tidyverse - Très bon contenu (en français)\nData Science in a Box “dsbox”) - contenu riche (en anglais)\nThe Big Book of R - une collection de ~150 livres sur R (en anglais)\nBlog\nLiens vers des blog à connaître absolument !\nDellaData - le blog de Claire Della Vedova (en français)\nThe Mockup Blog - le blog de Tom Mock (en anglais)\nJulia Silge Blog (en anglais)\nVideos\nDes tutoriels vidéos à suivre absolument !\nYury Zablotski - chaîne youtube de ressources R (en anglais)\n\n\n\n",
-      "last_modified": "2021-11-21T00:17:53+01:00"
+      "last_modified": "2021-11-21T00:40:09+01:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -11,6 +11,8 @@ navbar:
       href: ressources.html
     - text: "A propos"
       href: about.html
+    - icon: fa fa-rss
+      href: index.xml
 collections:
   posts:
     share: [facebook, twitter]
