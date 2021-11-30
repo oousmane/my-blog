@@ -16,9 +16,9 @@ navbar:
 collections:
   posts:
     share: [facebook, twitter]
-    disqus:
-      shortname: datascience-r
-      hidden: true
+ #   disqus:
+  #    shortname: datascience-r
+   #   hidden: true
 repository_url: https://github.com/oousmane/my-blog
 creative_commons: CC BY
 base_url: https://datascience-avec-r.netlify.app
