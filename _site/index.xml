@@ -7,14 +7,6 @@
     <description>My Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate>
-    <item>
-      <title>Bienvenue</title>
-      <dc:creator>Ousmane Ouedraogo</dc:creator>
-      <link>https://datascience-avec-r.netlify.app/posts/2021-11-18-bienvenue</link>
-      <description>Bienvenue sur ce blog consacré à la data science avec R.</description>
-      <guid>https://datascience-avec-r.netlify.app/posts/2021-11-18-bienvenue</guid>
-      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate>
   </channel>
 </rss>
