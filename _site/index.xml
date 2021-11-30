@@ -7,15 +7,7 @@
     <description>My Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate>
-    <item>
-      <title>Importation de données dans R </title>
-      <dc:creator>Ousmane Ouedraogo</dc:creator>
-      <link>https://datascience-avec-r.netlify.app/posts/2021-11-20-data-import-with-r</link>
-      <description>facilité d'import de données.</description>
-      <guid>https://datascience-avec-r.netlify.app/posts/2021-11-20-data-import-with-r</guid>
-      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Bienvenue</title>
       <dc:creator>Ousmane Ouedraogo</dc:creator>
