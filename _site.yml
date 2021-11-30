@@ -19,6 +19,8 @@ collections:
     disqus:
       shortname: datascience-r
       hidden: true
+repository_url: https://github.com/oousmane/my-blog
+creative_commons: CC BY
 base_url: https://datascience-avec-r.netlify.app
 google_analytics: "UA-213908542-1"
 output: distill::distill_article
