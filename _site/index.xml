@@ -7,6 +7,15 @@
     <description>My Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Analyse Exploratoire de données (AED) avec R</title>
+      <dc:creator>ousmane</dc:creator>
+      <link>https://datascience-avec-r.netlify.app/posts/2021-12-01-analyse-exploratoire-de-donnes-aed-avec-r</link>
+      <description>Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données.</description>
+      <guid>https://datascience-avec-r.netlify.app/posts/2021-12-01-analyse-exploratoire-de-donnes-aed-avec-r</guid>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://datascience-avec-r.netlify.app/posts/2021-12-01-analyse-exploratoire-de-donnes-aed-avec-r/distill-preview.png" medium="image" type="image/png" width="1920" height="1152"/>
+    </item>
   </channel>
 </rss>
