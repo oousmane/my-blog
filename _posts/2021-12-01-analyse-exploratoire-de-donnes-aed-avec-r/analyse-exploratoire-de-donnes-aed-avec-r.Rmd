@@ -35,9 +35,9 @@ Vous aurez besoin des librairies suivantes, installez-les si vous ne les avez pa
 library(tidyverse) # manipulation et visualisation de données
 library(dlookr) # exploration des données
 library(report) # rapport synthétisé
-library(kableExtra) # création de table de données
 library(extrafont) #
 library(hrbrthemes)
+library(rmarkdown)
 extrafont::loadfonts()
 ```
 
@@ -52,8 +52,7 @@ Un coup d'oeil rapide sur les données : 8 variables et 344 observations. ça po
 ```{r}
 library(palmerpenguins)
 penguins %>% 
-  head() %>% 
-  kable(format = "markdown")
+  rmarkdown::paged_table()
 ```
 
 ## Exploration numérique
@@ -87,7 +86,7 @@ L'inspection servira à décrire les données, à proposer des résumés statist
 ```{r}
 penguins %>% 
   diagnose() %>% 
-  kable(format = "markdown",digits = 2)
+  rmarkdown::paged_table()
 ```
 
 -   Inspection par type
@@ -95,7 +94,7 @@ penguins %>%
 ```{r}
 penguins %>% 
   diagnose_numeric() %>% 
-  kable(format = "markdown",digits = 2)
+  rmarkdown::paged_table()
 ```
 
 En exécutant ces lignes de codes vous avez les informations suivantes pour chaque variable variable numérique ! notez bien que les variables `species` et `sex`manquent ici. Vous connaisez la plupart des statistiques calculées.
@@ -111,7 +110,7 @@ Par contre le code ci dessous va renseigné sur les variables catégorielles :
 ```{r}
 penguins %>% 
   diagnose_category() %>% 
-  kable(format = "markdown",digits = 2)
+  rmarkdown::paged_table()
 ```
 
 -   `levels` les catégories possible pour chaque variable
@@ -131,7 +130,7 @@ Il s'agit de calculer les statistiques clés pour les différentes variables num
 ```{r}
 penguins %>% 
   describe() %>% 
-  glimpse()
+  rmarkdown::paged_table()
 ```
 
 Ce bout de code calcule plein de statistiques intéressantes, en plus de cela nous montre aussi le nombre de données manquantes par variable. Extrayons les différentes statistiques par groupe pour plus de lisibilité :
@@ -140,7 +139,7 @@ Ce bout de code calcule plein de statistiques intéressantes, en plus de cela no
 penguins %>% 
   describe() %>% 
   select(variable:kurtosis) %>% 
-  kable(format = "markdown",digits = 2)
+  rmarkdown::paged_table()
 ```
 
 skewness (asymétrie) et kurtosis (aplatissement) sont des paramètres de forme calculé pour chaque variable.
@@ -151,18 +150,18 @@ Nous pouvons également, décider des quantiles à calculer , par exemple ici le
 penguins %>% 
   describe(quantiles =c(.20,.40,.60,.80)) %>% 
   select(variable,n,na,starts_with("p")) %>% 
-  kable(format = "markdown", digits = 2)
+  rmarkdown::paged_table()
 ```
 
 ### Lien entre les variables
 
 En AED, on cherche aussi à voir si des variables particulières (par pair) sont corrélées. nous pouvons réaliser cela comme suit:
 
-```{r}
+```{r, layout = "l-body-outset"}
 penguins %>% 
   correlate() %>% 
   head(10) %>% 
-  kable(format = "markdown", digits = 2)
+  rmarkdown::paged_table()
 ```
 
 Nous avons juste montré les 10 premières valeurs. Par défaut la méthode utilisée est `pearson`. Nous pouvons également spécifier la méthode pour `spearman` ou `kendall`. Ici nous allons calculer les trois :
@@ -186,7 +185,7 @@ kendall <- penguins %>%
 
 full_join(x = pearson,y = spearman) %>% 
   full_join(x = .,y = kendall) %>% 
-  kable(format = "markdown", digits = 2)
+  rmarkdown::paged_table()
 ```
 
 ## Exploration graphique
@@ -373,38 +372,38 @@ Analyses were conducted using the R Statistical language (version 4.0.5; R Core 
 
 References
 
-----------
+------------------------------------------------------------------------
 
-- Bob Rudis (2020). hrbrthemes: Additional Themes, Theme Components and Utilities for 'ggplot2'. R package version 0.8.0. <https://CRAN.R-project.org/package=hrbrthemes>
+-   Bob Rudis (2020). hrbrthemes: Additional Themes, Theme Components and Utilities for 'ggplot2'. R package version 0.8.0. <https://CRAN.R-project.org/package=hrbrthemes>
 
-- Choonghyun Ryu (2021). dlookr: Tools for Data Diagnosis, Exploration, Transformation. R package version 0.5.2. <https://CRAN.R-project.org/package=dlookr>
+-   Choonghyun Ryu (2021). dlookr: Tools for Data Diagnosis, Exploration, Transformation. R package version 0.5.2. <https://CRAN.R-project.org/package=dlookr>
 
-- H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+-   H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
 
-- Hadley Wickham (2019). stringr: Simple, Consistent Wrappers for Common String Operations. R package version 1.4.0. <https://CRAN.R-project.org/package=stringr>
+-   Hadley Wickham (2019). stringr: Simple, Consistent Wrappers for Common String Operations. R package version 1.4.0. <https://CRAN.R-project.org/package=stringr>
 
-- Hadley Wickham (2021). forcats: Tools for Working with Categorical Variables (Factors). R package version 0.5.1. <https://CRAN.R-project.org/package=forcats>
+-   Hadley Wickham (2021). forcats: Tools for Working with Categorical Variables (Factors). R package version 0.5.1. <https://CRAN.R-project.org/package=forcats>
 
-- Hadley Wickham (2021). tidyr: Tidy Messy Data. R package version 1.1.4. <https://CRAN.R-project.org/package=tidyr>
+-   Hadley Wickham (2021). tidyr: Tidy Messy Data. R package version 1.1.4. <https://CRAN.R-project.org/package=tidyr>
 
-- Hadley Wickham and Jim Hester (2021). readr: Read Rectangular Text Data. R package version 2.1.0. <https://CRAN.R-project.org/package=readr>
+-   Hadley Wickham and Jim Hester (2021). readr: Read Rectangular Text Data. R package version 2.1.0. <https://CRAN.R-project.org/package=readr>
 
-- Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2021). dplyr: A Grammar of Data Manipulation. R package version 1.0.7. <https://CRAN.R-project.org/package=dplyr>
+-   Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2021). dplyr: A Grammar of Data Manipulation. R package version 1.0.7. <https://CRAN.R-project.org/package=dplyr>
 
-- Hao Zhu (2021). kableExtra: Construct Complex Table with 'kable' and Pipe Syntax. R package version 1.3.4. <https://CRAN.R-project.org/package=kableExtra>
+-   Hao Zhu (2021). kableExtra: Construct Complex Table with 'kable' and Pipe Syntax. R package version 1.3.4. <https://CRAN.R-project.org/package=kableExtra>
 
-- Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. <https://allisonhorst.github.io/palmerpenguins/>
+-   Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. <https://allisonhorst.github.io/palmerpenguins/>
 
-- Kirill Müller and Hadley Wickham (2021). tibble: Simple Data Frames. R package version 3.1.6. <https://CRAN.R-project.org/package=tibble>
+-   Kirill Müller and Hadley Wickham (2021). tibble: Simple Data Frames. R package version 3.1.6. <https://CRAN.R-project.org/package=tibble>
 
-- Lionel Henry and Hadley Wickham (2020). purrr: Functional Programming Tools. R package version 0.3.4. <https://CRAN.R-project.org/package=purrr>
+-   Lionel Henry and Hadley Wickham (2020). purrr: Functional Programming Tools. R package version 0.3.4. <https://CRAN.R-project.org/package=purrr>
 
-- Makowski, D., Ben-Shachar, M.S., Patil, I. & Lüdecke, D. (2020). Automated Results Reporting as a Practical Tool to Improve Reproducibility and Methodological Best Practices Adoption. CRAN. Available from <https://github.com/easystats/report.> doi: .
+-   Makowski, D., Ben-Shachar, M.S., Patil, I. & Lüdecke, D. (2020). Automated Results Reporting as a Practical Tool to Improve Reproducibility and Methodological Best Practices Adoption. CRAN. Available from <https://github.com/easystats/report.> doi: .
 
-- Nicholas Tierney, Di Cook, Miles McBain and Colin Fay (2021). naniar: Data Structures, Summaries, and Visualisations for Missing Data. R package version 0.6.1. <https://CRAN.R-project.org/package=naniar>
+-   Nicholas Tierney, Di Cook, Miles McBain and Colin Fay (2021). naniar: Data Structures, Summaries, and Visualisations for Missing Data. R package version 0.6.1. <https://CRAN.R-project.org/package=naniar>
 
-- R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <https://www.R-project.org/.>
+-   R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <https://www.R-project.org/.>
 
-- Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686, <https://doi.org/10.21105/joss.01686>
+-   Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686, <https://doi.org/10.21105/joss.01686>
 
-- Winston Chang, (2014). extrafont: Tools for using fonts. R package version 0.17. <https://CRAN.R-project.org/package=extrafont>
+-   Winston Chang, (2014). extrafont: Tools for using fonts. R package version 0.17. <https://CRAN.R-project.org/package=extrafont>
