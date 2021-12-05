@@ -8,6 +8,6 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[![Ousmane Ouedraogo](image/ousmane.jpg){width="8in"}](https://ousmane-ouedraogo.netlify.app)
+![](image/ousmane.jpg)
 
 Si vous voulez en savoir plus sur moi, rendez-vous sur ma [page perso](ousmane-ouedraogo.netlify.app "Ousmane - page perso")
