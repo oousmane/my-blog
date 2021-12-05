@@ -19,6 +19,7 @@ collections:
     disqus:
       shortname: datascience-r
       hidden: true
+    subscribe:  _subscribe.html
 repository_url: https://github.com/oousmane/my-blog
 creative_commons: CC BY
 base_url: https://datascience-avec-r.netlify.app

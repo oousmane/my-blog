@@ -2221,7 +2221,7 @@ function init_posts_list() {
 
 
 
-<div class="posts-container posts-apply-limit l-page">
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Articles">Articles</h1>
 <a href="posts/analyse-exploratoire/" class="post-preview">
@@ -2241,6 +2241,20 @@ function init_posts_list() {
 <p>Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données.</p>
 </div>
 </a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section subscribe">
+<h3>Subscribe</h3>
+
+<form method='post' action='https://blogtrottr.com'>
+  <p>Vous avez aimé ? Souscrivez pour recevoir une notification via email pour tout nouvel article!:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://blogdsar.netlify.app/index.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='subscribe' />
+</form>
+</div>
 </div>
 <div class="posts-more">
 <a href="#">More articles &raquo;</a>

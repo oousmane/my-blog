@@ -1,7 +1,6 @@
 ---
 title: "Analyse Exploratoire de données (AED) avec R"
-description: \|
-Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données.
+description: "Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données."
 author:
 - name: Ousmane Ouedraogo
 url: https://ousmane-ouedraogo.netlify.app
@@ -14,7 +13,7 @@ toc: true
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,fig.width = 10,
                       fig.height = 6, fig.retina = 2,
-                      dev = "ragg_png", res = 1000)
+                      dev = "ragg_png", res = 1000,warning = FALSE)
 ```
 
 ## Introduction
