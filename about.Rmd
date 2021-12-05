@@ -1,11 +1,13 @@
 ---
 title: "Blog Data Science avec R"
 description: |
-  Bienvenue sur mon blog sur la Data Science ! J'aime jouer avec les données et essayer de comprendre le monde à travers les statistiques, le machine learing et de l'intelligence artificielle. J'aime aussi apprendre, enseigner et créer. Avoir un blog personnel combine de manière optimale ces trois passions. Et tout cela est rendu possible grâce à R et RStudio. C'est pourquoi j'aime R !
+  Bienvenue sur mon blog sur la Data Science ! J'aime jouer avec les données et essayer de comprendre le monde à travers le prisme des statistiques, du machine learning et de l'IA. J'aime aussi apprendre, enseigner et créer. Avoir un blog personnel combine de manière optimale ces trois passions.Tout cela est rendu possible grâce à R et RStudio. C'est pourquoi j'❤️ R !
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-![](image/ousmane.jpg)
+[![Ousmane Ouedraogo](image/ousmane.jpg){width="8in"}](https://ousmane-ouedraogo.netlify.app)
+
+Si vous voulez en savoir plus sur moi, rendez-vous sur ma [page perso](ousmane-ouedraogo.netlify.app "Ousmane - page perso")
