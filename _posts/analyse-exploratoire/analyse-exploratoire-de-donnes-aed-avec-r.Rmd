@@ -3,10 +3,13 @@ title: "Analyse Exploratoire de données (AED) avec R"
 description: "Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données."
 author:
 - name: Ousmane Ouedraogo
-url: https://ousmane-ouedraogo.netlify.app
+  url: https://ousmane-ouedraogo.netlify.app
 date: 2021-12-01
+categories:
+  - EDA
+  - VISUALISATION
 output:
-distill::distill_article:
+  distill::distill_article:
 toc: true
 ---
 
