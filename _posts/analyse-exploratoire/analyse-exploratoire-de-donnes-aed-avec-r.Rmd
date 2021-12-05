@@ -1,14 +1,14 @@
 ---
 title: "Analyse Exploratoire de données (AED) avec R"
-description: |
-  Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données.
+description: \|
+Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données.
 author:
-  - name: Ousmane Ouedraogo
-    url: https://ousmane-ouedraogo.netlify.app
+- name: Ousmane Ouedraogo
+url: https://ousmane-ouedraogo.netlify.app
 date: 2021-12-01
 output:
-  distill::distill_article:
-    toc: true
+distill::distill_article:
+toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -336,7 +336,7 @@ ggplot(data = penguins, aes(x = species, y = bill_length_mm, fill =species))+
   theme(legend.position = "none")
 ```
 
-###Graphique Quantile-Quantile ou Q-Q plot
+### Graphique Quantile-Quantile ou Q-Q plot
 
 Le graphique quantile-quantile (Q-Q plot) est un outil de diagnostic largement utilisé pour évaluer les similitudes et les différences de distribution entre deux échantillons indépendants à une variable. Il s'agit également d'un outil populaire pour vérifier la pertinence d'une distribution de probabilité spécifiée pour des données univariées données.
 
