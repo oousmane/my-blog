@@ -10,4 +10,4 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](image/ousmane.jpg)
 
-Si vous voulez en savoir plus sur moi, rendez-vous sur ma [page perso](ousmane-ouedraogo.netlify.app "Ousmane - page perso")
+Si vous voulez en savoir plus sur moi, rendez-vous sur ma [page perso](https://ousmane-ouedraogo.netlify.app "Ousmane - page perso")
