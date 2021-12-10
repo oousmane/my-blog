@@ -2,8 +2,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>Data Science avec R</title>
-    <link>https://datascience-avec-r.netlify.app</link>
-    <atom:link href="https://datascience-avec-r.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
+    <link>https://blogdsar.netlify.app</link>
+    <atom:link href="https://blogdsar.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
     <description>My Blog
 </description>
     <generator>Distill</generator>
@@ -11,26 +11,26 @@
     <item>
       <title>Text Mining avec R</title>
       <dc:creator>Ousmane Ouedraogo</dc:creator>
-      <link>https://datascience-avec-r.netlify.app/posts/text-mining-avec-r</link>
+      <link>https://blogdsar.netlify.app/posts/text-mining-avec-r</link>
       <description>Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage….</description>
       <category>TEXT MINING</category>
       <category>TIDYVERSE</category>
       <category>VISUALISATION</category>
-      <guid>https://datascience-avec-r.netlify.app/posts/text-mining-avec-r</guid>
+      <guid>https://blogdsar.netlify.app/posts/text-mining-avec-r</guid>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://datascience-avec-r.netlify.app/posts/text-mining-avec-r/text-mining-avec-r_files/figure-html5/unnamed-chunk-10-1.png" medium="image" type="image/png" width="2880" height="1920"/>
+      <media:content url="https://blogdsar.netlify.app/posts/text-mining-avec-r/text-mining-avec-r_files/figure-html5/unnamed-chunk-10-1.png" medium="image" type="image/png" width="2880" height="1920"/>
     </item>
     <item>
       <title>Analyse Exploratoire de données (AED) avec R</title>
       <dc:creator>Ousmane Ouedraogo</dc:creator>
-      <link>https://datascience-avec-r.netlify.app/posts/analyse-exploratoire</link>
+      <link>https://blogdsar.netlify.app/posts/analyse-exploratoire</link>
       <description>Les données brutes doivent être inspectées , explorées pour de nouvelles hypothèses et réparées afin d'augmenter la qualité et la sortie des données.</description>
       <category>EDA</category>
       <category>VISUALISATION</category>
       <category>TIDYVERSE</category>
-      <guid>https://datascience-avec-r.netlify.app/posts/analyse-exploratoire</guid>
+      <guid>https://blogdsar.netlify.app/posts/analyse-exploratoire</guid>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://datascience-avec-r.netlify.app/posts/analyse-exploratoire/distill-preview.png" medium="image" type="image/png" width="1920" height="1152"/>
+      <media:content url="https://blogdsar.netlify.app/posts/analyse-exploratoire/distill-preview.png" medium="image" type="image/png" width="1920" height="1152"/>
     </item>
   </channel>
 </rss>
