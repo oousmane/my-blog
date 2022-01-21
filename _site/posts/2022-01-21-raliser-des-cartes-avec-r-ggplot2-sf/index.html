@@ -87,55 +87,55 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Data Science avec R: Text Mining avec R</title>
+<title>Data Science avec R: Réaliser des cartes avec R </title>
 
-<meta property="description" itemprop="description" content="Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage…."/>
+<meta property="description" itemprop="description" content="Réaliser des cartes (thématiques) d&#39;excellentes  avec R en utilisant ggplot2, sf et mapsf."/>
 
-<link rel="canonical" href="https://blogdsar.netlify.app/posts/text-mining-avec-r/"/>
+<link rel="canonical" href="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-12-06"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-12-06"/>
+<meta property="article:published" itemprop="datePublished" content="2022-01-21"/>
+<meta property="article:created" itemprop="dateCreated" content="2022-01-21"/>
 <meta name="article:author" content="Ousmane Ouedraogo"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Data Science avec R: Text Mining avec R"/>
+<meta property="og:title" content="Data Science avec R: Réaliser des cartes avec R "/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage…."/>
-<meta property="og:url" content="https://blogdsar.netlify.app/posts/text-mining-avec-r/"/>
-<meta property="og:image" content="https://blogdsar.netlify.app/posts/text-mining-avec-r/text-mining-avec-r_files/figure-html5/unnamed-chunk-10-1.png"/>
-<meta property="og:image:width" content="2880"/>
-<meta property="og:image:height" content="1920"/>
+<meta property="og:description" content="Réaliser des cartes (thématiques) d&#39;excellentes  avec R en utilisant ggplot2, sf et mapsf."/>
+<meta property="og:url" content="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/"/>
+<meta property="og:image" content="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-8-1.png"/>
+<meta property="og:image:width" content="2304"/>
+<meta property="og:image:height" content="1536"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Data Science avec R"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content="Data Science avec R: Text Mining avec R"/>
-<meta property="twitter:description" content="Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage…."/>
-<meta property="twitter:url" content="https://blogdsar.netlify.app/posts/text-mining-avec-r/"/>
-<meta property="twitter:image" content="https://blogdsar.netlify.app/posts/text-mining-avec-r/text-mining-avec-r_files/figure-html5/unnamed-chunk-10-1.png"/>
-<meta property="twitter:image:width" content="2880"/>
-<meta property="twitter:image:height" content="1920"/>
+<meta property="twitter:title" content="Data Science avec R: Réaliser des cartes avec R "/>
+<meta property="twitter:description" content="Réaliser des cartes (thématiques) d&#39;excellentes  avec R en utilisant ggplot2, sf et mapsf."/>
+<meta property="twitter:url" content="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/"/>
+<meta property="twitter:image" content="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-8-1.png"/>
+<meta property="twitter:image:width" content="2304"/>
+<meta property="twitter:image:height" content="1536"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Data Science avec R: Text Mining avec R"/>
-<meta name="citation_fulltext_html_url" content="https://blogdsar.netlify.app/posts/text-mining-avec-r/"/>
+<meta name="citation_title" content="Data Science avec R: Réaliser des cartes avec R "/>
+<meta name="citation_fulltext_html_url" content="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/"/>
 <meta name="citation_fulltext_world_readable" content=""/>
-<meta name="citation_online_date" content="2021/12/06"/>
-<meta name="citation_publication_date" content="2021/12/06"/>
+<meta name="citation_online_date" content="2022/01/21"/>
+<meta name="citation_publication_date" content="2022/01/21"/>
 <meta name="citation_author" content="Ousmane Ouedraogo"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","categories","output","toc","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Text Mining avec R"]},{"type":"character","attributes":{},"value":["Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage…."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ousmane Ouedraogo"]},{"type":"character","attributes":{},"value":["https://ousmane-ouedraogo.netlify.app"]}]}]},{"type":"character","attributes":{},"value":["2021-12-06"]},{"type":"character","attributes":{},"value":["TEXT MINING","TIDYVERSE","VISUALISATION"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["https://blogdsar.netlify.app/posts/text-mining-avec-r/"]},{"type":"character","attributes":{},"value":["https://blogdsar.netlify.app/posts/text-mining-avec-r/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","categories","output","toc","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Réaliser des cartes avec R "]},{"type":"character","attributes":{},"value":["Réaliser des cartes (thématiques) d'excellentes  avec R en utilisant ggplot2, sf et mapsf."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ousmane Ouedraogo"]},{"type":"character","attributes":{},"value":["https://ousmane-ouedraogo.netlify.app"]}]}]},{"type":"character","attributes":{},"value":["2022-01-21"]},{"type":"character","attributes":{},"value":["SIG","TIDYVERSE","VISUALISATION"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/"]},{"type":"character","attributes":{},"value":["https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["images/tmwr_0101.png","text-mining-avec-r_files/anchor-4.2.2/anchor.min.js","text-mining-avec-r_files/bowser-1.9.3/bowser.min.js","text-mining-avec-r_files/distill-2.2.21/template.v2.js","text-mining-avec-r_files/figure-html5/unnamed-chunk-10-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-11-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-12-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-13-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-14-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-15-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-16-1.png","text-mining-avec-r_files/figure-html5/unnamed-chunk-17-1.png","text-mining-avec-r_files/font-awesome-5.13.0/css/all.min.css","text-mining-avec-r_files/font-awesome-5.13.0/css/v4-shims.min.css","text-mining-avec-r_files/font-awesome-5.13.0/js/script.js","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-brands-400.eot","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-brands-400.svg","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-brands-400.ttf","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-brands-400.woff","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-brands-400.woff2","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-regular-400.eot","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-regular-400.svg","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-regular-400.ttf","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-regular-400.woff","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-regular-400.woff2","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-solid-900.eot","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-solid-900.svg","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-solid-900.ttf","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-solid-900.woff","text-mining-avec-r_files/font-awesome-5.13.0/webfonts/fa-solid-900.woff2","text-mining-avec-r_files/header-attrs-2.11/header-attrs.js","text-mining-avec-r_files/jquery-3.6.0/jquery-3.6.0.js","text-mining-avec-r_files/jquery-3.6.0/jquery-3.6.0.min.js","text-mining-avec-r_files/jquery-3.6.0/jquery-3.6.0.min.map","text-mining-avec-r_files/popper-2.6.0/popper.min.js","text-mining-avec-r_files/tippy-6.2.7/tippy-bundle.umd.min.js","text-mining-avec-r_files/tippy-6.2.7/tippy-light-border.css","text-mining-avec-r_files/tippy-6.2.7/tippy.css","text-mining-avec-r_files/tippy-6.2.7/tippy.umd.min.js","text-mining-avec-r_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["images/Screenshot 2022-01-21 at 16.42.55.png","raliser-des-cartes-avec-r-ggplot2-sf_files/anchor-4.2.2/anchor.min.js","raliser-des-cartes-avec-r-ggplot2-sf_files/bowser-1.9.3/bowser.min.js","raliser-des-cartes-avec-r-ggplot2-sf_files/distill-2.2.21/template.v2.js","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-10-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-3-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-4-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-5-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-6-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-7-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-8-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-9-1.png","raliser-des-cartes-avec-r-ggplot2-sf_files/header-attrs-2.11/header-attrs.js","raliser-des-cartes-avec-r-ggplot2-sf_files/jquery-3.6.0/jquery-3.6.0.js","raliser-des-cartes-avec-r-ggplot2-sf_files/jquery-3.6.0/jquery-3.6.0.min.js","raliser-des-cartes-avec-r-ggplot2-sf_files/jquery-3.6.0/jquery-3.6.0.min.map","raliser-des-cartes-avec-r-ggplot2-sf_files/popper-2.6.0/popper.min.js","raliser-des-cartes-avec-r-ggplot2-sf_files/tippy-6.2.7/tippy-bundle.umd.min.js","raliser-des-cartes-avec-r-ggplot2-sf_files/tippy-6.2.7/tippy-light-border.css","raliser-des-cartes-avec-r-ggplot2-sf_files/tippy-6.2.7/tippy.css","raliser-des-cartes-avec-r-ggplot2-sf_files/tippy-6.2.7/tippy.umd.min.js","raliser-des-cartes-avec-r-ggplot2-sf_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2090,7 +2090,7 @@ gtag('config', 'UA-213908542-1');
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Text Mining avec R","description":"Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage….","authors":[{"author":"Ousmane Ouedraogo","authorURL":"https://ousmane-ouedraogo.netlify.app","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-12-06T00:00:00.000+00:00","citationText":"Ouedraogo, 2021"}
+{"title":"Réaliser des cartes avec R ","description":"Réaliser des cartes (thématiques) d'excellentes  avec R en utilisant ggplot2, sf et mapsf.","authors":[{"author":"Ousmane Ouedraogo","authorURL":"https://ousmane-ouedraogo.netlify.app","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-01-21T00:00:00.000+00:00","citationText":"Ouedraogo, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2117,21 +2117,21 @@ gtag('config', 'UA-213908542-1');
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Text Mining avec R</h1>
+<h1>Réaliser des cartes avec R</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-  <a href="../../index.html#category:TEXT_MINING" class="dt-tag">TEXT MINING</a>
+  <a href="../../index.html#category:SIG" class="dt-tag">SIG</a>
   <a href="../../index.html#category:TIDYVERSE" class="dt-tag">TIDYVERSE</a>
   <a href="../../index.html#category:VISUALISATION" class="dt-tag">VISUALISATION</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Le Text Mining consiste à utiliser le Machine Learning pour l’analyse de texte. Découvrez tout ce que vous devez savoir : définition, fonctionnement, techniques, avantages, cas d’usage….</p></p>
+<p><p>Réaliser des cartes (thématiques) d’excellentes avec R en utilisant ggplot2, sf et mapsf.</p></p>
 </div>
 
 <div class="d-byline">
   Ousmane Ouedraogo <a href="https://ousmane-ouedraogo.netlify.app" class="uri">https://ousmane-ouedraogo.netlify.app</a> 
   
-<br/>2021-12-06
+<br/>2022-01-21
 </div>
 
 <div class="d-article">
@@ -2141,410 +2141,198 @@ gtag('config', 'UA-213908542-1');
 
 </nav>
 </div>
-<h2 id="introduction">Introduction</h2>
-<p>Le text mining (également connue sous le nom d’analyse de texte) est le processus de transformation de texte non structuré en données structurées pour une analyse facile. L’exploration de texte utilise le traitement du langage naturel (ou Natural Language Processing en anglais -NLP), permettant aux machines de comprendre le langage humain et de le traiter. En effet l’exploration de texte automatise le processus de classification des textes par sentiment, sujet et intention. Cet article va introduire la notion de texte mining, énumerer quelques méthodes et proposer une mise oeuvre simple avec le logiciel R.</p>
-<h2 id="les-techniques-du-text-mining">Les techniques du Text Mining</h2>
-<p>Il existe différentes méthodes et techniques de text mining. Dans cette section, nous allons couvrir certains des plus fréquents. De façon globale l’analyse de texte, suit le workflow ci-après défini dans <a href="https://www.tidytextmining.com/tidytext.html" title="tidytextmining">Text Mining with R : A Tidy Approach</a>. Un ouvrage excéllent pour aller plus loin dans le text mining.</p>
-<figure>
-<img src="images/tmwr_0101.png" title="Tidy text mining" alt="A flowchart of a typical text analysis using tidy data principles" /><figcaption aria-hidden="true">A flowchart of a typical text analysis using tidy data principles</figcaption>
-</figure>
-<h3 id="la-fréquence-des-mots">La fréquence des mots</h3>
-<p>La fréquence des mots peut être utilisée pour identifier les termes ou concepts les plus récurrents dans un ensemble de données. Trouver les mots les plus mentionnés dans un texte non structuré peut être particulièrement utile lors de l’analyse des avis des clients, des conversations sur les réseaux sociaux ou de discours.</p>
-<h3 id="la-collocation">La collocation</h3>
-<p>La collocation fait référence à une séquence de mots qui apparaissent généralement les uns à côté des autres. Les types de collocations les plus courants sont les bigrammes (une paire de mots susceptibles d’aller ensemble, comme démarrer, gagner du temps ou prendre une décision) et les trigrammes (une combinaison de trois mots, comme à distance de marche ou rester en contact).</p>
-<p>Identifier les collocations - et les compter comme un seul mot - améliore la granularité du texte, permet une meilleure compréhension de sa structure sémantique et, au final, conduit à des résultats de text mining plus précis.</p>
-<h3 id="lanalyse-de-sentiment">L’analyse de sentiment</h3>
-<p>Elle consiste à analyser les émotions qui sous-tendent un texte donné. Supposons que vous analysiez une un feedback client sur votre application mobile. Vous découvrirez peut-être que les sujets les plus fréquemment mentionnés dans ces revues sont la convivialité ou la facilité d’utilisation, mais ce n’est pas assez d’informations pour tirer des conclusions. L’analyse des sentiments vous aide à comprendre l’opinion et les sentiments dans un texte et à les classer comme positifs, négatifs ou neutres. L’analyse des sentiments a de nombreuses applications utiles. En effet, elle peut se reveler un réel atout en support client, en proposition de services basés sur retour utilisateur ou simplement appréhender la tendance générale d’un discours.</p>
-<h2 id="reproductibilité">Reproductibilité</h2>
-<p>Dans cette section se trouve tout ce dont vous avez besoin pour reproduire les différentes analyses sur votre ordinateur.</p>
-<h3 id="package-r">Package R</h3>
-<p>Les différents packages dont nous aurons besoin sont les suivants :</p>
+<h1 id="introduction">Introduction</h1>
+<p>L’utilisation de cartes pour représenter l’information géographique fournit une approche très précieuse pour une meilleure compréhension des données. Les cartes sont relativement faciles à comprendre pour la plupart des gens, ce qui permet aux informations clés d’atteindre un public plus large.</p>
+<p>Cependant, travailler avec des cartes n’est pas facile. Une carte représente une projection dans un plan 2D d’un territoire qui se trouve en réalité à la surface d’une sphère 3D. Cela implique une quantité considérable de défis techniques et les résoudre n’est pas une tâche triviale. Fort heureusement, il existe plusieurs outils spécialement conçus pour faire face à ces problèmes. Dans R, une quantité considérables de packages permettent de traiter et de visualiser les données spatiales. Nous utiliserons dans le présent article les packages <code>{sf}</code>, <code>{ggplot2}</code> et <code>{mapsf}</code>, pour produire des cartes d’excellentes qualité. Pour des questions de manipulation et de personnalisation nous utiliserons au besoins d’autres packages.</p>
+<h1 id="reproductibilité">Reproductibilité</h1>
+<p>Dans cette section se trouve tout les packages R dont vous avez besoin pour reproduire les différentes analyses sur votre ordinateur. Ils sont tous disponibles sur le CRAN.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/juliasilge/tidytext'>tidytext</a></span><span class='op'>)</span> <span class='co'># CRAN v0.3.2</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/ColinFay/rfeel'>rfeel</a></span><span class='op'>)</span> <span class='co'># [github::ColinFay/rfeel] v0.0.0.9000</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/ColinFay/proustr'>proustr</a></span><span class='op'>)</span> <span class='co'># CRAN v0.4.0</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span> <span class='co'># CRAN v1.3.1</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>pilot</span><span class='op'>)</span> <span class='co'># [github::olihawkins/pilot] v3.5.0</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/wch/extrafont'>extrafont</a></span><span class='op'>)</span> <span class='co'># CRAN v0.17</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://readr.tidyverse.org'>readr</a></span><span class='op'>)</span> <span class='co'># CRAN v2.1.0</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://blog.fellstat.com/?cat=11'>wordcloud</a></span><span class='op'>)</span> <span class='co'># CRAN v2.6</span>
-<span class='fu'><a href='https://rdrr.io/pkg/extrafont/man/loadfonts.html'>loadfonts</a></span><span class='op'>(</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/riatelab/mapsf/'>mapsf</a></span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>
-<h3 id="données">Données</h3>
-<p>Les données à utiliser devant être textuelles,nous avons récuperer <a href="https://www.thomassankara.net/wp-content/uploads/2005/09/Discours_orientation_politique.pdf" title="DOP-1983">ici</a> le Discours d’Orientation Politique (DOP) prononcé le 02 Octobre 1983 par le Capitaine Thomas Sankara. Le discours à été copier dans un fichier texte.</p>
-<h3 id="thème-général-des-plots">Thème général des plots</h3>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span>new <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/pilot/man/theme_pilot.html'>theme_pilot</a></span><span class='op'>(</span>
-  title_size <span class='op'>=</span> <span class='fl'>30</span>, subtitle_size <span class='op'>=</span> <span class='fl'>25</span>,
-  caption_size <span class='op'>=</span> <span class='fl'>20</span>, axis_text_size <span class='op'>=</span> <span class='fl'>25</span>, axis_title_size <span class='op'>=</span> <span class='fl'>25</span>
-<span class='op'>)</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h2 id="import-et-traitement-des-données">Import et traitement des données</h2>
-<h3 id="import-et-formatage">Import et formatage</h3>
-<p>Dans cette section, nous allons importer le discours d’orientation politique dans R et le formater selon le principe du tidy text data.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dop_speech</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://readr.tidyverse.org/reference/read_lines.html'>read_lines</a></span><span class='op'>(</span>
-  file <span class='op'>=</span> <span class='st'>"../../data/dop_02_oct_thomas_sankara.txt"</span>
-<span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble</a></span><span class='op'>(</span>line <span class='op'>=</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>179</span>, text <span class='op'>=</span> <span class='va'>.</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h3 id="tokénisation-du-texte">Tokénisation du texte</h3>
-<p>Nous avons à présent pour, 179 lignes de textes. Pour le moment il est difficile de travailler ce texte. Il va falloir décomposer les lignes de textes en “tokens”. Un token est une unité de texte significative, le plus souvent un mot, que nous souhaitons utiliser pour une analyse plus approfondie, et la “tokenisation” est le processus de division du texte en “tokens”.</p>
-<p>Pour ce faire, nous utiliserons la fonction <code>unnest_tokens()</code> du package tidytext.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dop_speech</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/pkg/tidytext/man/unnest_tokens.html'>unnest_tokens</a></span><span class='op'>(</span><span class='va'>word</span>, <span class='va'>text</span><span class='op'>)</span>
-</code></pre>
-</div>
-<pre><code># A tibble: 10,222 × 2
-    line word      
-   &lt;int&gt; &lt;chr&gt;     
- 1     1 peuple    
- 2     1 de        
- 3     1 haute     
- 4     1 volta     
- 5     2 camarades 
- 6     2 militantes
- 7     2 et        
- 8     2 militants 
- 9     2 de        
-10     2 la        
-# … with 10,212 more rows</code></pre>
-</div>
-<p>Après avoir utilisé la fonction <code>unnest_tokens()</code>, nous avons divisé chaque ligne de manière à ce qu’il y ait un token (mot) dans chaque ligne de la nouvelle table de données ; la tokénisation par défaut dans <code>unnest_tokens()</code> concerne les mots simples (pas composés), comme indiqué ici. Vous pouvez également notez que :</p>
+<p>Les limites administratives de la zone d’intérêt en fonction des cas peuvent être obtenus sur internet via <a href="https://gadm.org/download_country.html">gadm</a> ou par une personne tierce. Dans ce cas vous l’aurez en locale sous forme de fichier . Aussi vous pouvez faire le choix d’acquérir les données spatiales via internet directement dans un objet R.</p>
+<h1 id="via-un-fichier-locale">Via un fichier locale</h1>
+<p>Comme dit précédemment vous pouvez téléchargé les limites administratives d’un pays donné ici Burkina Faso. Choisir le format shapefile. le téléchargement débutera automatiquement.</p>
+<p><img src="images/Screenshot%202022-01-21%20at%2016.42.55.png" /></p>
+<p>Décompresser le dossier, plusieurs fichiers y sont notamment gadm36_ISO_lvl*. Le plus important à savoir c’est que :</p>
 <ul>
-<li><p>Les autres colonnes, telles que le numéro de ligne d’où provient chaque mot, sont conservées.</p></li>
-<li><p>La ponctuation a été supprimée.</p></li>
+<li><p>ISO - Représente le code ISO du pays, Burkina Faso : BFA</p></li>
+<li><p>lvl - Le niveau de découpage administratif : (0) Limites frontalières, (1) régions , (2) provinces et (3) communes pour ce qui est du Burkina Faso.</p></li>
 </ul>
-<p>Par défaut, unnest_tokens() convertit les tokens en minuscules, ce qui les rend plus faciles à comparer ou à combiner avec d’autres ensembles de données.</p>
-<p>Avoir les données de texte dans ce format nous permet de manipuler, de traiter et de visualiser le texte à l’aide de l’écosystème tidyverse.</p>
-<h3 id="néttoyer-les-mots-vides-ou-stopwords">Néttoyer les mots vides ou stopwords</h3>
-<p>Maintenant que les données sont au format un mot par ligne, nous pouvons les manipuler avec des outils du tidyverse comme dplyr. Souvent dans l’analyse de texte, nous voudrons supprimer les mots vides ( des sens ); Les mots vides sont des mots qui ne sont pas utiles pour une analyse, généralement des mots extrêmement courants tels que « le », « de », « à », et ainsi de suite. Nous pouvons les supprimés de notre jeux de données. Pour cela nous allons utiliser la base de données stop_words contenu dans le package <a href="https://colinfay.me/proustr-package/">proustr</a>.</p>
+<p>Nous allons à présent importer les limites administratives de niveau 1 avec la fonction st_read() de {sf} qui comporte deux arguments : dsn - le répertoire dans lequel se trouve les fichiers de données spatiales et layer - le nom de la couche (fichier sans extension) à importer.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dop_speech_clean</span> <span class='op'>&lt;-</span> <span class='va'>dop_speech</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/pkg/tidytext/man/unnest_tokens.html'>unnest_tokens</a></span><span class='op'>(</span><span class='va'>word</span>, <span class='va'>text</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter-joins.html'>anti_join</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>.</span>, <span class='va'>stop_words</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>On passe alors de plus de 10 000 mots à quelques 5200, après nettoyage des mots vides !</p>
-<p>Nous avons en plus de ces mots, du texte numérique que nous devons nettoyer . Nous utiliserons le regex pour les supprimer.</p>
-<p>Ici le code permet de les retrouver.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>num_val</span> <span class='op'>&lt;-</span> <span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/pull.html'>pull</a></span><span class='op'>(</span><span class='st'>"word"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"[0-9]"</span>, x <span class='op'>=</span> <span class='va'>.</span>, value <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>num_val</span><span class='op'>)</span>
-</code></pre>
-</div>
-<pre><code>[1] &quot;1983&quot; &quot;4&quot;    &quot;1983&quot; &quot;17&quot;   &quot;1983&quot; &quot;17&quot;  </code></pre>
-</div>
-<p>Une fois les nombres retrouver, nous procéderons à leur suppression. Le mot “à” est tout de même contenu dans notre texte, . Il faut noter que les textes en français sont plus difficiles à analyser : accents, apostrophes et pleins de caractères spéciaux, et même l’encodage pose des fois problèmes. Nous ferons avec 😅.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dop_speech_clean</span> <span class='op'>&lt;-</span> <span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='op'>(</span><span class='va'>word</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='va'>num_val</span><span class='op'>)</span>, <span class='va'>word</span> <span class='op'>!=</span> <span class='va'>word</span><span class='op'>[</span><span class='fl'>84</span><span class='op'>]</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h2 id="analyse-et-visualisation-du-texte">Analyse et visualisation du texte</h2>
-<p>Dans cette question il sera question d’analyser le texte à proprement parler. Quels sont les mots utilisés de façon fréquence, leur polarité (positif ou négatif) ainsi que le sentiment générale dégagé par le texte (joie, tristesse etc..). Il est important de garder à l’esprit que nous sommes en introduction et qu’il est plus approprier pour un linguiste, un communicateur de tirer de meilleures informations. A la base je ne possède pas ses compétences.</p>
-<h3 id="fréquence-des-mots">Fréquence des mots</h3>
-<p>Comme dit plus haut, une des méthodes d’analyses du texte consiste à élaboré une table de fréquence de ceux. concrètement il s’agira pour chaque mot de compter combien de fois il a été utilisé dans le texte. Le package dplyr offre d’importantes facilités pour y arriver.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>word</span>, sort <span class='op'>=</span> <span class='cn'>TRUE</span>, name <span class='op'>=</span> <span class='st'>"freq"</span><span class='op'>)</span>
-</code></pre>
-</div>
-<pre><code># A tibble: 2,263 × 2
-   word             freq
-   &lt;chr&gt;           &lt;int&gt;
- 1 à                 221
- 2 révolution        101
- 3 peuple             90
- 4 pays               52
- 5 c&#39;est              45
- 6 révolutionnaire    41
- 7 voltaïque          41
- 8 société            39
- 9 masses             37
-10 populaire          30
-# … with 2,253 more rows</code></pre>
-</div>
-<p>Un aperçu rapide indique que le mot le plus fréquent dans ce discours est peuple suivi loin derrière par pays. Il démeurre des soucis avec “à”,“d’une” etc.. que je ne saurais expliquer à l’étape actuelle. Comme pour dire que l’analyse de texte est un travail fastidieux et nécessite de la minutie. Dans cet article nous les supprimerons. Bien entendu nous perdons de l’information. Nous reviendrons dans un autre article sur comment nettoyer, filtrer du texte avec regex (regular expressions.)</p>
-<p>Les dix mots les plus fréquents :</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>word_freq</span> <span class='op'>&lt;-</span> <span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>word</span>, sort <span class='op'>=</span> <span class='cn'>TRUE</span>, name <span class='op'>=</span> <span class='st'>"freq"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='op'>(</span><span class='va'>word</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"à"</span>, <span class='st'>"d'une"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/top_n.html'>top_n</a></span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span>
-
-<span class='va'>word_freq</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>kableExtra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/kable.html'>kable</a></span><span class='op'>(</span>format <span class='op'>=</span> <span class='st'>"markdown"</span><span class='op'>)</span>
-</code></pre>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">word</th>
-<th style="text-align: right;">freq</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">révolution</td>
-<td style="text-align: right;">101</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">peuple</td>
-<td style="text-align: right;">90</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">pays</td>
-<td style="text-align: right;">52</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">c’est</td>
-<td style="text-align: right;">45</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">révolutionnaire</td>
-<td style="text-align: right;">41</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">voltaïque</td>
-<td style="text-align: right;">41</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">société</td>
-<td style="text-align: right;">39</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">masses</td>
-<td style="text-align: right;">37</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">populaire</td>
-<td style="text-align: right;">30</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">cdr</td>
-<td style="text-align: right;">29</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Une visualisation rapide :</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>word_freq</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>word <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/reorder.factor.html'>reorder</a></span><span class='op'>(</span><span class='va'>word</span>, <span class='va'>freq</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>word</span>, y <span class='op'>=</span> <span class='va'>freq</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/coord_flip.html'>coord_flip</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
-    x <span class='op'>=</span> <span class='cn'>NULL</span>, y <span class='op'>=</span> <span class='st'>"# Nombre"</span>,
-    title <span class='op'>=</span> <span class='st'>"Le Discours d'Orientation Politique en mots"</span>,
-    subtitle <span class='op'>=</span> <span class='st'>"Thomas Sankara | Octobre 1983 "</span>,
-    caption <span class='op'>=</span> <span class='st'>" © Data Science avec R, 2021"</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span><span class='op'>)</span>
-</code></pre>
-</div>
-<p><img src="text-mining-avec-r_files/figure-html5/unnamed-chunk-10-1.png" width="1440" data-distill-preview=1 /></p>
-</div>
-<h3 id="connotation-des-mots">Connotation des mots</h3>
-<p>Une autre technique d’analyse de données textuelles consiste à déterminer si un mot à une connotation positive ou négative et de trouver une manière élégante de visualiser tout cela.</p>
-<p>La connotation (positive ou négative ) des mots en français est consignée dans la base de données du package <a href="https://github.com/ColinFay/rfeel" title="rfeel">rfeel</a>.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>connotation</span> <span class='op'>&lt;-</span> <span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>inner_join</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>.</span>, y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/rfeel/man/rfeel.html'>rfeel</a></span><span class='op'>(</span><span class='st'>"polarity"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>polarity</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>word</span>, <span class='va'>polarity</span>, sort <span class='op'>=</span> <span class='cn'>TRUE</span>, name <span class='op'>=</span> <span class='st'>"freq"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/slice.html'>slice_max</a></span><span class='op'>(</span><span class='va'>freq</span>, n <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='co'># 10 pour un barchart</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>Barchart:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>connotation</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>word <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/reorder.factor.html'>reorder</a></span><span class='op'>(</span><span class='va'>word</span>, <span class='va'>freq</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>word</span>, y <span class='op'>=</span> <span class='va'>freq</span>, fill <span class='op'>=</span> <span class='va'>polarity</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/coord_flip.html'>coord_flip</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>polarity</span>, scales <span class='op'>=</span> <span class='st'>"free_y"</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
-    x <span class='op'>=</span> <span class='cn'>NULL</span>, y <span class='op'>=</span> <span class='st'>"# Nombre"</span>,
-    title <span class='op'>=</span> <span class='st'>"Connotation générale du Discours d'Orientation Politique"</span>,
-    subtitle <span class='op'>=</span> <span class='st'>"Thomas Sankara | Octobre 1983"</span>,
-    caption <span class='op'>=</span> <span class='st'>"© Data Science avec R, 2021"</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>
-    legend.position <span class='op'>=</span> <span class='st'>"none"</span>,
-    strip.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>25</span>, hjust <span class='op'>=</span> <span class='fl'>.5</span><span class='op'>)</span>,
-    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>bf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_read.html'>st_read</a></span><span class='op'>(</span>
+  dsn <span class='op'>=</span> <span class='st'>"~/Downloads/gadm36_BFA_shp"</span>,layer <span class='op'>=</span> <span class='st'>"gadm36_BFA_1"</span>
   <span class='op'>)</span>
 </code></pre>
 </div>
-<p><img src="text-mining-avec-r_files/figure-html5/unnamed-chunk-12-1.png" width="1440" /></p>
-</div>
-<p>D’une manière générale, le discours dégage une connotation positive.</p>
-<h3 id="wordcloud-ou-nuage-de-mots">Wordcloud ou nuage de mots</h3>
-<p>Un <strong>nuage de mots</strong> n’est ni plus ni moins qu’une <strong>représentation visuelle</strong> permettant :</p>
-<ul>
-<li><p>d’<strong>identifier rapidement les mots clés</strong> présentant le plus d’occurrences dans un texte (plus un mot apparaît fréquemment, plus la taille de la police dans le nuage de mots est grande)</p></li>
-<li><p>de <strong>faciliter la compréhension</strong> d’un texte</p></li>
-<li><p>de <strong>repérer rapidement les idées principales</strong> d’un texte en faisant apparaître les champs lexicaux présents dans ce dernier.</p></li>
-</ul>
-<p>Implémentation dans R:</p>
-<div class="layout-chunk" data-layout="l-body">
+<pre><code>Reading layer `gadm36_BFA_1&#39; from data source 
+  `/Users/ousmane/Downloads/gadm36_BFA_shp&#39; using driver `ESRI Shapefile&#39;
+Simple feature collection with 13 features and 10 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: -5.518918 ymin: 9.401108 xmax: 2.4054 ymax: 15.08259
+Geodetic CRS:  WGS 84</code></pre>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>123</span><span class='op'>)</span>
-<span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='op'>(</span><span class='va'>word</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"à"</span>, <span class='st'>"d'une"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>word</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/pkg/wordcloud/man/wordcloud.html'>wordcloud</a></span><span class='op'>(</span>
-    words <span class='op'>=</span> <span class='va'>word</span>, freq <span class='op'>=</span> <span class='va'>n</span>, max.words <span class='op'>=</span> <span class='fl'>100</span>,
-    random.order <span class='op'>=</span> <span class='cn'>FALSE</span>, min.freq <span class='op'>=</span> <span class='fl'>15</span>
-  <span class='op'>)</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span><span class='op'>(</span><span class='fl'>18</span><span class='op'>)</span><span class='op'>)</span>
 </code></pre>
 </div>
-<p><img src="text-mining-avec-r_files/figure-html5/unnamed-chunk-13-1.png" width="960" /></p>
 </div>
-<p>Voilà un joli nuage de mots issu du discours d’orientation politique. Nous pouvons le parfaire en ajoutant une touche de couleur.</p>
+<p>La code suivant produira votre carte avec ggplot2 :</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>123</span><span class='op'>)</span>
-<span class='va'>pal</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/RColorBrewer/man/ColorBrewer.html'>brewer.pal</a></span><span class='op'>(</span><span class='fl'>8</span>, <span class='st'>"Dark2"</span><span class='op'>)</span>
-<span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='op'>(</span><span class='va'>word</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"à"</span>, <span class='st'>"d'une"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>word</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/pkg/wordcloud/man/wordcloud.html'>wordcloud</a></span><span class='op'>(</span>
-    words <span class='op'>=</span> <span class='va'>word</span>, freq <span class='op'>=</span> <span class='va'>n</span>, max.words <span class='op'>=</span> <span class='fl'>100</span>,
-    random.order <span class='op'>=</span> <span class='cn'>FALSE</span>, min.freq <span class='op'>=</span> <span class='fl'>15</span>,
-    colors <span class='op'>=</span> <span class='va'>pal</span>
-  <span class='op'>)</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>bf</span><span class='op'>)</span><span class='op'>+</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<p><img src="text-mining-avec-r_files/figure-html5/unnamed-chunk-14-1.png" width="960" /></p>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-3-1.png" width="1152" /></p>
 </div>
-<p>Un autre wordcloud avec la connotation (positive ou négative) :</p>
+<p>Une seule ligne de code et voilà ! On pourra ajouter bien d’autres choses titres, nord géographique, échelle etc. On verra cela plus bas.</p>
+<h1 id="via-un-fichier-distant">Via un fichier distant</h1>
+<p>Pour certaines raisons, on peut ne pas vouloir les données sur son ordinateur. Cela est tout a fait possible grâce au package {rgeoboundaries}. Pour cela on a besoin d’avoir accès à internet.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>123</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># install.packages("remotes")</span>
+<span class='fu'>remotes</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"wmgeolab/rgeoboundaries"</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://gitlab.com/dickoa/rgeoboundaries'>rgeoboundaries</a></span><span class='op'>)</span>
 
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/hadley/reshape'>reshape2</a></span><span class='op'>)</span>
+<span class='va'>bf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/rgeoboundaries/man/geoboundaries.html'>geoboundaries</a></span><span class='op'>(</span>
+  country <span class='op'>=</span> <span class='st'>"Burkina Faso"</span>,adm_lvl <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='co'># accès via internet </span>
 
-<span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>inner_join</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>.</span>, y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/rfeel/man/rfeel.html'>rfeel</a></span><span class='op'>(</span><span class='st'>"polarity"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>polarity</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>word</span>, <span class='va'>polarity</span>, sort <span class='op'>=</span> <span class='cn'>TRUE</span>, name <span class='op'>=</span> <span class='st'>"freq"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/pkg/reshape2/man/cast.html'>acast</a></span><span class='op'>(</span><span class='va'>word</span> <span class='op'>~</span> <span class='va'>polarity</span>, value.var <span class='op'>=</span> <span class='st'>"freq"</span>, fill <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://rdrr.io/pkg/wordcloud/man/comparison.cloud.html'>comparison.cloud</a></span><span class='op'>(</span>
-    colors <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"gray80"</span>, <span class='st'>"gray20"</span><span class='op'>)</span>,
-    max.words <span class='op'>=</span> <span class='fl'>100</span>, random.order <span class='op'>=</span> <span class='cn'>F</span>
-  <span class='op'>)</span>
+<span class='co'># Carte de base, le même code !</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>bf</span><span class='op'>)</span><span class='op'>+</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<p><img src="text-mining-avec-r_files/figure-html5/unnamed-chunk-15-1.png" width="960" /></p>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-4-1.png" width="1152" /></p>
 </div>
-<h3 id="analyse-de-sentiment">Analyse de sentiment</h3>
-<p>L’analyse de sentiment consiste à analyser les émotions contenues dans un texte (joie, tristesse etc…). Je repètes qu’à ce niveau une expertise est hautement souhaitable. Nous présentons ici une introduction ainsi qu’une mise en oeuvre pratique en utilisant R. Nous allons nous servir de la base de données contenue dans rfeel qui reprend les six <a href="https://fr.wikipedia.org/wiki/Paul_Ekman">émotions</a> selon Ekman.</p>
+<p>L’un dans l’autre vous savez le faire par vous même ! L’option deux est assez intéressante car vous pouvez changer de pays au besoin. Par example faisons la même chose pour cette fois-ci le Mali.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>sentiment</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>
-  <span class='st'>"Joie"</span>, <span class='st'>"Surprise"</span>, <span class='st'>"Dégoût"</span>, <span class='st'>"Tristesse"</span>, <span class='st'>"Peur"</span>,
-  <span class='st'>"Colère"</span>
-<span class='op'>)</span>
-<span class='va'>dop_speech_clean</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>inner_join</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>.</span>, y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/rfeel/man/rfeel.html'>rfeel</a></span><span class='op'>(</span><span class='st'>"score"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>sentiment</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span>freq <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/context.html'>n</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>sentiment <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/reorder.factor.html'>reorder</a></span><span class='op'>(</span><span class='va'>sentiment</span>, <span class='va'>freq</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>.</span>, mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>sentiment</span>, y <span class='op'>=</span> <span class='va'>freq</span>, fill <span class='op'>=</span> <span class='va'>sentiment</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>label <span class='op'>=</span> <span class='va'>sentiment</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_viridis.html'>scale_fill_viridis_d</a></span><span class='op'>(</span>option <span class='op'>=</span> <span class='st'>"F"</span>, direction <span class='op'>=</span> <span class='op'>-</span><span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/coord_flip.html'>coord_flip</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>
-    legend.position <span class='op'>=</span> <span class='st'>"none"</span>,
-    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>
-  <span class='op'>)</span> <span class='op'>+</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>ml</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/rgeoboundaries/man/geoboundaries.html'>geoboundaries</a></span><span class='op'>(</span>
+  country <span class='op'>=</span> <span class='st'>"Mali"</span>,adm_lvl <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='co'># accès via internet </span>
+
+<span class='co'># Carte de base, le même code !</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>ml</span><span class='op'>)</span><span class='op'>+</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-5-1.png" width="1152" /></p>
+</div>
+<p>Parfait vous êtes déja un pro !</p>
+<h1 id="personnalisation-thèmes-titres-échelles-et-nord-géographique">Personnalisation : thèmes, titres, échelles et nord géographique</h1>
+<p>La carte produite est un objet ggplot2, ce qui le rend très personnalisable via les fonctionnalités de base ou d’extensions ggplot2. Nous utiliserons quelques packages supplémentaires {ggspatial} et {ggthemes}</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># install.packages("ggspatial")</span>
+<span class='co'># install.packages("ggthemes")</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://paleolimbot.github.io/ggspatial/'>ggspatial</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jrnold/ggthemes'>ggthemes</a></span><span class='op'>)</span>
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>bf</span><span class='op'>)</span><span class='op'>+</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
-    title <span class='op'>=</span> <span class='st'>"Discours d'Orientation Politique : les émotions véhiculées"</span>,
-    subtitle <span class='op'>=</span> <span class='st'>"Thomas Sankara | Octobre 1983"</span>,
-    caption <span class='op'>=</span> <span class='st'>"© Data Science avec R, 2021"</span>,
-    x <span class='op'>=</span> <span class='cn'>NULL</span>, y <span class='op'>=</span> <span class='st'>"# Nombre"</span>
-  <span class='op'>)</span>
+    title <span class='op'>=</span> <span class='st'>"Carte administrative du Burkina Faso"</span>,
+    subtitle <span class='op'>=</span> <span class='st'>"Découpage en région"</span>,
+    x <span class='op'>=</span> <span class='st'>"Longitude (°)"</span>,
+    y <span class='op'>=</span> <span class='st'>"Latitude (°)"</span>,
+    caption <span class='op'>=</span> <span class='st'>"Données : www.gadm.org"</span><span class='op'>)</span>
 </code></pre>
 </div>
-<p><img src="text-mining-avec-r_files/figure-html5/unnamed-chunk-16-1.png" width="1440" /></p>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-6-1.png" width="1152" /></p>
 </div>
-<p>Le DOP d’Octobre 1983 dégageait plus de la colère ?</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Comme nous l’avons dit en introduction, le Text Mining regorge bien de techniques avancées comme la classification de texte, des algorithmes d’apprentissage supervisé et j’en passe. Cet article avait pour but d’introduire quelque notions et de susciter un intérêt sur la question.</p>
-<h2 id="ressources">Ressources</h2>
-<p>Pour en apprendre plus veuillez consulter ses ressources.</p>
-<ul>
-<li><p><a href="https://www.tidytextmining.com/index.html">Text Mining with R : A Tidy Approach</a></p></li>
-<li><p><a href="https://m-clark.github.io/text-analysis-with-R/">Text Analysis in R</a></p></li>
-<li><p><a href="https://smltar.com">Supervised Machine Learning for Text Analysis in R</a></p></li>
-</ul>
-<h2 id="reférences">Reférences</h2>
-<p>Colin Fay (2019). proustr: Tools for Natural Language Processing in French. R package version 0.4.0. <a href="https://CRAN.R-project.org/package=proustr" class="uri">https://CRAN.R-project.org/package=proustr</a></p>
-<p>Colin Fay (2021). rfeel: Access the FEEL Lexicon. R package version 0.0.0.9000. <a href="https://github.com/ColinFay/rfeel" class="uri">https://github.com/ColinFay/rfeel</a></p>
-<p>Erich Neuwirth (2014). RColorBrewer: ColorBrewer Palettes. R package version 1.1-2. <a href="https://CRAN.R-project.org/package=RColorBrewer" class="uri">https://CRAN.R-project.org/package=RColorBrewer</a></p>
-<p>H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.</p>
-<p>Hadley Wickham (2007). Reshaping Data with the reshape Package. Journal of Statistical Software, 21(12), 1-20. URL <a href="http://www.jstatsoft.org/v21/i12/." class="uri">http://www.jstatsoft.org/v21/i12/.</a></p>
-<p>Hadley Wickham (2019). stringr: Simple, Consistent Wrappers for Common String Operations. R package version 1.4.0. <a href="https://CRAN.R-project.org/package=stringr" class="uri">https://CRAN.R-project.org/package=stringr</a></p>
-<p>Hadley Wickham (2021). forcats: Tools for Working with Categorical Variables (Factors). R package version 0.5.1. <a href="https://CRAN.R-project.org/package=forcats" class="uri">https://CRAN.R-project.org/package=forcats</a></p>
-<p>Hadley Wickham (2021). tidyr: Tidy Messy Data. R package version 1.1.4. <a href="https://CRAN.R-project.org/package=tidyr" class="uri">https://CRAN.R-project.org/package=tidyr</a></p>
-<p>Hadley Wickham and Jim Hester (2021). readr: Read Rectangular Text Data. R package version 2.1.0. <a href="https://CRAN.R-project.org/package=readr" class="uri">https://CRAN.R-project.org/package=readr</a></p>
-<p>Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2021). dplyr: A Grammar of Data Manipulation. R package version 1.0.7. <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a></p>
-<p>Ian Fellows (2018). wordcloud: Word Clouds. R package version 2.6. <a href="https://CRAN.R-project.org/package=wordcloud" class="uri">https://CRAN.R-project.org/package=wordcloud</a></p>
-<p>Kauê de Sousa and Adam H. Sparks and William Ashmall and Jacob van Etten and Svein Ø. Solberg (2020). chirps: API Client for the CHIRPS Precipitation Data in R. Journal of Open Source Software, 5(51), 2419, <a href="https://doi.org/10.21105/joss.02419" class="uri">https://doi.org/10.21105/joss.02419</a></p>
-<p>Kirill Müller and Hadley Wickham (2021). tibble: Simple Data Frames. R package version 3.1.6. <a href="https://CRAN.R-project.org/package=tibble" class="uri">https://CRAN.R-project.org/package=tibble</a></p>
-<p>Lionel Henry and Hadley Wickham (2020). purrr: Functional Programming Tools. R package version 0.3.4. <a href="https://CRAN.R-project.org/package=purrr" class="uri">https://CRAN.R-project.org/package=purrr</a></p>
-<p>Makowski, D., Ben-Shachar, M.S., Patil, I. &amp; Lüdecke, D. (2020). Automated Results Reporting as a Practical Tool to Improve Reproducibility and Methodological Best Practices Adoption. CRAN. Available from <a href="https://github.com/easystats/report." class="uri">https://github.com/easystats/report.</a> doi: .</p>
-<p>Matthew Lincoln (2020). clipr: Read and Write from the System Clipboard. R package version 0.7.1. <a href="https://CRAN.R-project.org/package=clipr" class="uri">https://CRAN.R-project.org/package=clipr</a></p>
-<p>Oliver Hawkins (2021). pilot: A minimal ggplot2 theme with an accessible discrete color palette. R package version 3.5.0.</p>
-<p>R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <a href="https://www.R-project.org/." class="uri">https://www.R-project.org/.</a></p>
-<p>Silge J, Robinson D (2016). “tidytext: Text Mining and Analysis Using Tidy Data Principlesin R.” _JOSS_, *1*(3). doi: 10.21105/joss.00037 (URL: <a href="https://doi.org/10.21105/joss.00037">https://doi.org/10.21105/joss.00037),&lt;URL:</a>,&lt;URL:) <a href="http://dx.doi.org/10.21105/joss.00037" class="uri">http://dx.doi.org/10.21105/joss.00037</a>.</p>
-<p>Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686, <a href="https://doi.org/10.21105/joss.01686" class="uri">https://doi.org/10.21105/joss.01686</a></p>
-<p>Winston Chang, (2014). extrafont: Tools for using fonts. R package version 0.17. <a href="https://CRAN.R-project.org/package=extrafont" class="uri">https://CRAN.R-project.org/package=extrafont</a></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>C’est déjà mieux que la première carte. Nous allons maintenant distingué chaque region via une couleur et un nom. Une première étape:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># install.packages("ggsflabel")</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://yutannihilation.github.io/ggsflabel/'>ggsflabel</a></span><span class='op'>)</span>
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>bf</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span><span class='va'>shapeName</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Carte administrative du Burkina Faso"</span>,
+    subtitle <span class='op'>=</span> <span class='st'>"Découpage en région"</span>,
+    x <span class='op'>=</span> <span class='st'>"Longitude (°)"</span>,
+    y <span class='op'>=</span> <span class='st'>"Latitude (°)"</span>,
+    caption <span class='op'>=</span> <span class='st'>"Données : www.gadm.org"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-7-1.png" width="1152" /></p>
+</div>
+<p>C’est déjà intéressant ! Il est est tout à fait possible de choisir une autre palette de couleur ou d’en fournir soi même</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>bf</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span><span class='va'>shapeName</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Carte administrative du Burkina Faso"</span>,
+    subtitle <span class='op'>=</span> <span class='st'>"Découpage en région"</span>,
+    x <span class='op'>=</span> <span class='st'>"Longitude (°)"</span>,
+    y <span class='op'>=</span> <span class='st'>"Latitude (°)"</span>,
+    caption <span class='op'>=</span> <span class='st'>"Données : www.gadm.org"</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_viridis.html'>scale_fill_viridis_d</a></span><span class='op'>(</span>option <span class='op'>=</span> <span class='st'>"H"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-8-1.png" width="1152" data-distill-preview=1 /></p>
+</div>
+<h1 id="zoom-géographique">Zoom géographique</h1>
+<p>Dans certains cas, notre zone d’intérêt coïncide avec une région ou un regroupement de plusieurs régions. Nous utiliserons dplyr du tidyverse pour filtrer les données spatiales. Allons pour une région , le Centre-Nord par exemple.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># filtrage centre nord</span>
+
+<span class='va'>cn</span> <span class='op'>&lt;-</span> <span class='va'>bf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>shapeName</span> <span class='op'>==</span> <span class='st'>"Centre-Nord"</span><span class='op'>)</span>
+
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>cn</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Carte administrative région du Centre-Nord"</span>,
+    subtitle <span class='op'>=</span> <span class='st'>"Frontière région"</span>,
+    x <span class='op'>=</span> <span class='st'>"Longitude (°)"</span>,
+    y <span class='op'>=</span> <span class='st'>"Latitude (°)"</span>,
+    caption <span class='op'>=</span> <span class='st'>"Données : www.gadm.org"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-9-1.png" width="1152" /></p>
+</div>
+<p>Pour plusieurs régions ce sera la même approche :</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>zone</span> <span class='op'>&lt;-</span> <span class='va'>bf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span>
+    <span class='va'>shapeName</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Centre-Nord"</span>,<span class='st'>"Est"</span>,<span class='st'>"Sahel"</span>,<span class='st'>"Nord"</span><span class='op'>)</span><span class='op'>)</span>
+
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>zone</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span><span class='va'>shapeName</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Carte administrative de la zone d'étude"</span>,
+    subtitle <span class='op'>=</span> <span class='st'>"Découpage région"</span>,
+    x <span class='op'>=</span> <span class='st'>"Longitude (°)"</span>,
+    y <span class='op'>=</span> <span class='st'>"Latitude (°)"</span>,
+    caption <span class='op'>=</span> <span class='st'>"Données : www.gadm.org"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-10-1.png" width="1152" /></p>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
     <span class="disqus-comments">
       <i class="fas fa-comments"></i>
       &nbsp;
-      <span class="disqus-comment-count" data-disqus-identifier="posts/text-mining-avec-r/">Comment on this article</span>
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/">Comment on this article</span>
     </span>
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblogdsar.netlify.app%2Fposts%2Ftext-mining-avec-r%2F">
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblogdsar.netlify.app%2Fposts%2F2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf%2F">
         <i class="fab fa-facebook"></i>
       </a>
-      <a href="https://twitter.com/share?text=Text%20Mining%20avec%20R&amp;url=https%3A%2F%2Fblogdsar.netlify.app%2Fposts%2Ftext-mining-avec-r%2F">
+      <a href="https://twitter.com/share?text=R%C3%A9aliser%20des%20cartes%20avec%20R%20&amp;url=https%3A%2F%2Fblogdsar.netlify.app%2Fposts%2F2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf%2F">
         <i class="fab fa-twitter"></i>
       </a>
     </span>
@@ -2553,8 +2341,8 @@ gtag('config', 'UA-213908542-1');
   <div id="disqus_thread" class="hidden"></div>
   <script type="text/javascript" cookie-consent="functionality">
 var disqus_config = function () {
-  this.page.url = 'https://blogdsar.netlify.app/posts/text-mining-avec-r/';
-  this.page.identifier = 'posts/text-mining-avec-r/';
+  this.page.url = 'https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/';
+  this.page.identifier = 'posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/';
 };
 (function() {
   var d = document, s = d.createElement('script');
@@ -2592,13 +2380,13 @@ var disqus_config = function () {
   <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/oousmane/my-blog">https://github.com/oousmane/my-blog</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Ouedraogo (2021, Dec. 6). Data Science avec R: Text Mining avec R. Retrieved from https://blogdsar.netlify.app/posts/text-mining-avec-r/</pre>
+  <pre class="citation-appendix short">Ouedraogo (2022, Jan. 21). Data Science avec R: Réaliser des cartes avec R . Retrieved from https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/</pre>
   <p>BibTeX citation</p>
-  <pre class="citation-appendix long">@misc{ouedraogo2021text,
+  <pre class="citation-appendix long">@misc{ouedraogo2022réaliser,
   author = {Ouedraogo, Ousmane},
-  title = {Data Science avec R: Text Mining avec R},
-  url = {https://blogdsar.netlify.app/posts/text-mining-avec-r/},
-  year = {2021}
+  title = {Data Science avec R: Réaliser des cartes avec R },
+  url = {https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/},
+  year = {2022}
 }</pre>
 </div>
 <!--/radix_placeholder_appendices-->

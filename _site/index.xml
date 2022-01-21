@@ -7,7 +7,19 @@
     <description>My Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Réaliser des cartes avec R </title>
+      <dc:creator>Ousmane Ouedraogo</dc:creator>
+      <link>https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf</link>
+      <description>Réaliser des cartes (thématiques) d'excellentes  avec R en utilisant ggplot2, sf et mapsf.</description>
+      <category>SIG</category>
+      <category>TIDYVERSE</category>
+      <category>VISUALISATION</category>
+      <guid>https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf</guid>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blogdsar.netlify.app/posts/2022-01-21-raliser-des-cartes-avec-r-ggplot2-sf/raliser-des-cartes-avec-r-ggplot2-sf_files/figure-html5/unnamed-chunk-8-1.png" medium="image" type="image/png" width="2304" height="1536"/>
+    </item>
     <item>
       <title>Text Mining avec R</title>
       <dc:creator>Ousmane Ouedraogo</dc:creator>
