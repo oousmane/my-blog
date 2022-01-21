@@ -116,7 +116,11 @@ ggplot(data = bf)+geom_sf()+
     subtitle = "Découpage en région",
     x = "Longitude (°)",
     y = "Latitude (°)",
-    caption = "Données : www.gadm.org")
+    caption = "Données : www.gadm.org")+
+  annotation_scale(location = "br", width_hint = 0.3) +
+    annotation_north_arrow(location = "tr", which_north = "true", 
+        pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+        style = north_arrow_fancy_orienteering)
 ```
 
 C'est déjà mieux que la première carte. Nous allons maintenant distingué chaque region via une couleur et un nom. Une première étape:
@@ -132,7 +136,11 @@ ggplot(data = bf)+
     subtitle = "Découpage en région",
     x = "Longitude (°)",
     y = "Latitude (°)",
-    caption = "Données : www.gadm.org")
+    caption = "Données : www.gadm.org")+
+  annotation_scale(location = "br", width_hint = 0.3) +
+    annotation_north_arrow(location = "tr", which_north = "true", 
+        pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+        style = north_arrow_fancy_orienteering)
 ```
 
 C'est déjà intéressant ! Il est est tout à fait possible de choisir une autre palette de couleur ou d'en fournir soi même
@@ -147,7 +155,11 @@ ggplot(data = bf)+
     x = "Longitude (°)",
     y = "Latitude (°)",
     caption = "Données : www.gadm.org")+
-  scale_fill_viridis_d(option = "H")
+  scale_fill_viridis_d(option = "H")+
+  annotation_scale(location = "br", width_hint = 0.3) +
+    annotation_north_arrow(location = "tr", which_north = "true", 
+        pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+        style = north_arrow_fancy_orienteering)
 
 ```
 
@@ -170,7 +182,11 @@ ggplot(data = cn)+
     subtitle = "Frontière région",
     x = "Longitude (°)",
     y = "Latitude (°)",
-    caption = "Données : www.gadm.org")
+    caption = "Données : www.gadm.org")+
+  annotation_scale(location = "bl", width_hint = 0.3) +
+    annotation_north_arrow(location = "bl", which_north = "true", 
+        pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+        style = north_arrow_fancy_orienteering)
 ```
 
 Pour plusieurs régions ce sera la même approche :
@@ -189,5 +205,29 @@ ggplot(data = zone)+
     subtitle = "Découpage région",
     x = "Longitude (°)",
     y = "Latitude (°)",
-    caption = "Données : www.gadm.org")
+    caption = "Données : www.gadm.org")+
+  annotation_scale(location = "bl", width_hint = 0.3) +
+    annotation_north_arrow(location = "bl", which_north = "true", 
+        pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+        style = north_arrow_fancy_orienteering)
 ```
+
+References
+----------
+
+\- Ahmadou Dicko (2021). rgeoboundaries: A Client to geoBoundaries, A Political Administrative Boundaries Dataset. R package version 0.0.0.9000. <https://gitlab.com/dickoa/rgeoboundaries>
+
+\- Dewey Dunnington (2021). ggspatial: Spatial Data Framework for ggplot2. R package version 1.1.5. <https://CRAN.R-project.org/package=ggspatial>
+
+\- H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+ - Hadley Wickham (2019). stringr: Simple, Consistent Wrappers for Common String Operations. R package version 1.4.0. <https://CRAN.R-project.org/package=stringr>
+
+\- Hadley Wickham, Jim Hester and Jennifer Bryan (2021). readr: Read Rectangular Text Data. R package version 2.1.1. <https://CRAN.R-project.org/package=readr>
+
+\- Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2021). dplyr: A Grammar of Data Manipulation. R package version 1.0.7. <https://CRAN.R-project.org/package=dplyr>
+
+\- Hiroaki Yutani (2021). ggsflabel: Labels for 'sf' with 'ggplot2'. R package version 0.0.1. <https://yutannihilation.github.io/ggsflabel/>
+
+\- Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446, <https://doi.org/10.32614/RJ-2018-009>
+
+\- R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <https://www.R-project.org/.>
